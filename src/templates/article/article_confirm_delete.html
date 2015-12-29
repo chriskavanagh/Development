@@ -1,0 +1,17 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+    <div class="row">
+        <div class="col-sm-6">
+            <form action = "" method="POST">{% csrf_token %}
+                <h3><p>Are you sure you want to delete {{ object }}?</p></h3>                
+                    
+                <input class='btn btn-danger' type='submit' value='Yes'></input>
+                <a href="{% url 'articles' %}" class='btn btn-success'>No</a>
+            </form>
+        </div>
+    </div>
+{% endblock %}

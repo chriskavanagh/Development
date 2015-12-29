@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
+        <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
+
+        <style>
+
+             .blog-post {
+
+                background: #ccc;
+                padding: 20px;
+                border: 5px solid black;
+                
+            }
+
+            .blog-main {
+
+                font-size: 18px;
+                line-height: 1.5;
+            }
+
+            .blog-title {
+
+                font-size: 60px;
+                font-weight: normal;
+                margin-bottom: 10;
+                margin-top: 30px;
+            }
+
+        </style>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="blog-header">
+                <h1 class="blog-title">Box Model Test</h1>
+                <p class="lead blog-description">Using Bootstrap CSS Framework</p>
+            </div>
+
+        <div class="row">
+            <div class="col-sm-8 blog-main">
+
+                <div class="blog-post">
+                    <h2 class="blog-post-title">Sample Blog Post</h2>
+                    <p class="blog-post-meta"><b>Date: {% now "jS \o\f F" %}</b></p>
+                    <hr>
+
+                    <p>In CSS, every element has a box surrounding it. Elements in CSS are of two
+                        different types depending on their display type. One is block, the other
+                        Inline.
+                    </p>
+                    
+                    {% lorem 10 p %}
+                    
+                </div>
+            </div>
+        </div>
+
+        <!-- bootstrap js -->
+        
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+    </body>

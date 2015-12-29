@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        
+        <title>CSS Box Model</title>
+
+        <style>
+
+            body {
+
+                background-color: #D3D3D3; 
+            }
+        
+            .content {
+
+                width: 700px;
+                height: 800px;                
+                background-color: #F8F8FF;
+                padding: 20px;
+                border: 15px solid #DCDCDC;
+                /*box-shadow: 5px 5px 5px 0px rgba(0,0,0,0.75);*/
+
+                position: absolute;
+                top: 10;
+                bottom: 10;
+                left: 0;
+                right: 0;
+                margin: auto;
+                
+            }
+            
+        </style>
+        
+    </head>
+
+    <body>
+        
+            <h1>Testing Template</h1>
+
+        <div class='content'>
+            <p>In CSS, every element has a box surrounding it. Elements in CSS are of two
+            different types depending on their display type. One is block, the other
+            Inline.
+            </p>
+       
+
+            <p><a href="{% url 'home' %}">Home</a></p>
+            <p><a href="{% url 'home' %}">Home</a></p>
+            <p><a href="{% url 'home' %}">Home</a></p>
+        </div>
+
+        
+    </body>
+
+</html>

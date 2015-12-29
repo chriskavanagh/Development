@@ -1,0 +1,38 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+{% block content %}
+
+<div class="col-sm-6">
+<div class="panel panel-default">
+    <div class="panel-heading">
+        <h2 class="panel-title">Add a new talk</h2>
+    </div>
+    <div class="panel-body">
+        <form action = "" method="POST">
+                {% csrf_token %}
+                {{ form|crispy }}
+            <input class='btn btn-success' type='submit' value='Add'></input>
+        </form>
+    </div>
+</div>
+</div>
+
+
+
+<div class="col-sm-6">
+    {% for talk in talklist_detail.talks.all %}
+        <div class="panel panel-info">
+            <div class="panel-heading">
+                <a class="close" aria-hidden="true" class="pull-right" href="#">&times;</a>
+                <h1 class="panel-title"><a href="{{ talk.get_absolute_url }}">{{ talk.name }}</a></h1>
+            </div>
+            <div class="panel-body">
+                <p class="bg-primary" style="padding: 15px"><strong>{{ talk.when }}</strong> in <strong>{{ talk.room }}</strong></p>
+                <p>by <strong>{{ talk.host }}</strong>.</p>
+            </div>
+        </div>
+    {% endfor %}
+
+{% endblock %}

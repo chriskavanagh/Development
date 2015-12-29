@@ -1,0 +1,39 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+
+{% block content %}
+
+<div class="container">
+    <div class="row">
+        <div class="col-sm-6">
+            <h2>Your Lists!</h2>
+            <hr>
+        </div>
+    </div>
+
+<div class="row">
+    <div class="col-sm-6">
+        <ul class="list-group">
+            {% for object in object_list %}
+                <li class="list-group-item">
+                    
+                    <a href="{{ object.get_absolute_url }}">{{ object }}</a>
+                </li>
+                {% empty %}
+                <li class="list-group-item">You have no lists</li>
+            {% endfor %}
+            
+        </ul>
+    </div>
+
+    <div class="col-sm-6">
+        <p><a href="{% url 'talks:lists:create' %}" class='btn btn-success'>Create a new list</a></p>
+    </div>
+</div>
+
+</div>
+
+
+{% endblock %}

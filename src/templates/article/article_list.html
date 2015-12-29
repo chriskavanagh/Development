@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+
+
+{% block content %}
+    
+<div class="row">
+    <div class="col-sm-6">
+        <h1>Article List</h1>
+        <ul class="list-group">
+            {% for article in object_list %}
+                <li class="list-group-item">
+                    <h3><a href="{{ article.get_absolute_url }}"class="list-group-item active">{{ article }}</a></h3>
+                    <p class="list-group-item-text">{{ article.body| truncatewords:10 }}</p>
+                </li>
+                    {% empty %}
+                    <li class="list-group-item">You have no lists</li>
+            {% endfor %}
+        </ul>
+    </div>    
+
+{% endblock %}

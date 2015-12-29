@@ -1,0 +1,22 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+
+{% block css %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/letter.css' %}">
+{% endblock %}
+
+
+{% block content %}
+<hr>    
+        
+            <div class='letter'>
+                <h3>{{ object.title }}</h3>
+                {% if user.is_authenticated %}
+                    <a href="{% url 'delete' object.pk %}">Delete Article :</a>
+                    <a href="{% url 'update' object.pk %}">Update Article</a>
+                {% endif %}
+                    <p>{{ object.body|linebreaks }}</p>
+                
+            </div>
+<hr>
+{% endblock %}

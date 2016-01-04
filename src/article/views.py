@@ -73,4 +73,13 @@ class ArticleDeleteView(ContextTitleMixIn, DeleteView):
         # return context
     
     
+def search_titles(request):
+    if request.method == 'POST':
+        #search_text = request.POST.get('post_text')
+        search_text = request.POST['search_text']
+    else:
+        search_text = ''
+    articles = Article.objects.filter(title__contains=search_text)
+    return render(request, 'article/ajax_search.html', {'articles': articles})
+    
  

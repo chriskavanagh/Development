@@ -1,0 +1,13 @@
+{% if articles.count > 0 %}
+
+{% for article in articles %}
+
+<li>{{ article.title }}</li>
+
+{% endfor %}
+
+{% else %}
+
+    <p>None to show!</p>
+    
+{% endif %}

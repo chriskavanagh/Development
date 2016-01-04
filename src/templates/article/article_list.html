@@ -18,6 +18,15 @@
                     <li class="list-group-item">You have no lists</li>
             {% endfor %}
         </ul>
-    </div>    
+    </div>
+
+    <h3>Search</h3>
+
+        {% csrf_token %}
+        <input type="text" id="search" name="search"/>
+        
+        <ul id="search-results">
+
+        </ul>    
 
 {% endblock %}

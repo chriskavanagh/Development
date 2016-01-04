@@ -39,6 +39,7 @@ INSTALLED_APPS = (
     'django.contrib.staticfiles',
     'article',
     'talks',
+    'posts',
     'whoosh',
     'crispy_forms',
     'haystack',

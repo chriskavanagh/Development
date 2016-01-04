@@ -15,4 +15,6 @@ urlpatterns = [
     url(r'^(?P<pk>\d+)/update/$', ArticleUpdateView.as_view(), name='update'),
     # Article Delete View:
     url(r'^(?P<pk>\d+)/delete/$', ArticleDeleteView.as_view(), name='delete'),
+    # Search url
+    url(r'^search/$', 'article.views.search_titles'),
 ]

@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load staticfiles %}
+{% load crispy_forms_tags %}
+
+
+{% block content %}
+<br><br>
+<div class="row white">
+    <div class="large-12 columns">
+        <a href="/logout" class="right">Logout</a>
+        <h2>Hi, {{request.user.username}}</h2>
+    </div>
+</div>
+
+<div class="row white">
+    <div class="columns large-12">
+        <form action='create_post/' method="POST" id="post-form">
+                {% csrf_token %}            
+                {{ form.text }}
+            <input type="submit" value="Post" class="tiny button">
+        </form>
+    </div>
+</div>
+
+<ul id='text-results'>
+
+</ul>
+
+
+
+{% endblock %}

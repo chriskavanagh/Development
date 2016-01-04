@@ -23,6 +23,8 @@ urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
     # Article app url's:
     url(r'^articles/', include('article.urls')),
+    # Post url's 
+    url(r'^posts/', include('posts.urls')),
     # Talks app url's:
     url(r'^talks/', include('talks.urls', namespace='talks')),
     # Home Page View:

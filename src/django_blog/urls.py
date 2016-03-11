@@ -17,6 +17,7 @@ from django.conf.urls import include, url
 from django.contrib import admin
 from django.conf import settings
 from django.conf.urls.static import static
+from .import views
 from .views import HomePageView, TestPageView, SignUpView, LoginView, LogOutView
 
 urlpatterns = [
@@ -31,6 +32,8 @@ urlpatterns = [
     url(r'^$', HomePageView.as_view(), name='home'),
     # Temporary Testing Page:
     url(r'^testing/$', TestPageView.as_view(), name='test'),
+    # ajax function
+    url(r'^testing/orders/$', views.get_order, name='orders'),
     # Sign Up View For New Users:
     url(r'^accounts/register/$', SignUpView.as_view(), name='signup'),
     # Login View:

@@ -2,7 +2,7 @@ from __future__ import absolute_import
 from django.conf.urls import patterns, url, include
 from .views import TalkListDetailView, TalkListListView, TalkListCreateView, TalkListUpdateView, TalkListUserView
 from braces import views
-#from . import views
+from . import views
 
  
  
@@ -18,7 +18,7 @@ list_patterns = [
     # Update View:
     url(r'^update/(?P<slug>[-\w]+)/$', TalkListUpdateView.as_view(), name='update'),
     # Test for function based detail view:
-    url(r'^d/(?P<slug>[-\w]+)/$', 'talks.views.talk_list_detail', name='talklist_detail'),
+    url(r'^d/(?P<slug>[-\w]+)/$', views.talk_list_detail, name='talklist_detail'),
  ]
  
  

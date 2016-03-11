@@ -1,68 +1,42 @@
+{% load staticfiles %}
+
 <!DOCTYPE html>
 <html lang="en">
-    <head>
 
+    <head>
+        <title>jQuery Ajax Tutorial</title>
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css">
         <link rel="stylesheet" href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap-theme.min.css">
-
-        <style>
-
-             .blog-post {
-
-                background: #ccc;
-                padding: 20px;
-                border: 5px solid black;
-                
-            }
-
-            .blog-main {
-
-                font-size: 18px;
-                line-height: 1.5;
-            }
-
-            .blog-title {
-
-                font-size: 60px;
-                font-weight: normal;
-                margin-bottom: 10;
-                margin-top: 30px;
-            }
-
-        </style>
-
-    </head>
-
-    <body>
-
-        <div class="container">
-
-            <div class="blog-header">
-                <h1 class="blog-title">Box Model Test</h1>
-                <p class="lead blog-description">Using Bootstrap CSS Framework</p>
-            </div>
-
-        <div class="row">
-            <div class="col-sm-8 blog-main">
-
-                <div class="blog-post">
-                    <h2 class="blog-post-title">Sample Blog Post</h2>
-                    <p class="blog-post-meta"><b>Date: {% now "jS \o\f F" %}</b></p>
-                    <hr>
-
-                    <p>In CSS, every element has a box surrounding it. Elements in CSS are of two
-                        different types depending on their display type. One is block, the other
-                        Inline.
-                    </p>
-                    
-                    {% lorem 10 p %}
-                    
-                </div>
-            </div>
-        </div>
-
-        <!-- bootstrap js -->
-        
-        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+        <script src="//netdna.bootstrapcdn.com/bootstrap/3.0.3/js/bootstrap.min.js"></script>
+        <script type='text/javascript' src="{% static 'js/youtube.js' %}"></script>        
+    </head>
+    
+<div class="container">
+    <div class='row'>
+    <body>
+        <h1><center>jQuery & Ajax</center></h1>
+
+        <h3>Coffee Orders:</h3>
+            <ul id="orders">
+                <li>Name: John, Drink: Coffee</li>
+                <li>Name: John, Drink: Coffee</li>
+            </ul>
+<hr>
+    <div class='row'>
+        <h4>Add A Coffee Order</h4>
+        {% csrf_token %}
+        <label for="name">Name: </label>
+            <p>name: <input type="text" id="name"></p>
+            
+        <label for="drink">Drink: </label>
+            <p>drink: <input type="text" id="drink"></p>
+            <button class='btn btn-success' id="add-order">Add!</button>
+    </div>
+
+    </div>
+</div>
+                
     </body>
+
+</html>

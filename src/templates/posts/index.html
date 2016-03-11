@@ -14,18 +14,21 @@
 
 <div class="row white">
     <div class="columns large-12">
-        <form action='create_post/' method="POST" id="post-form">
-                {% csrf_token %}            
+        <form method="POST" id="post-form" class='ajax'>
+                {% csrf_token %}
+            <div class='fieldwrapper' id='the_post'>            
                 {{ form.text }}
-            <input type="submit" value="Post" class="tiny button">
+            </div>
+            <input type="submit" id='post-text' value="Post" class="tiny button">
         </form>
     </div>
 </div>
 
-<ul id='text-results'>
+<ul id='talk'>
 
 </ul>
 
 
-
+<script src="//code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type='text/javascript' src="{% static 'js/main.js' %}"></script>
 {% endblock %}

@@ -6,7 +6,10 @@ from django.views.generic.list import ListView
 from django.views.generic.detail import DetailView
 from braces import views
 from django.contrib import messages
+from django.http import Http404, HttpResponse
 from django.views.generic.edit import CreateView, UpdateView, DeleteView
+import json
+
 
 
 
@@ -19,7 +22,7 @@ class ContextTitleMixIn(object):
         return context
         
         
-## or just list title as class var, then us view.title in the template.
+## or just list title as class var, then use view.title in the template.
 ## http://reinout.vanrees.org/weblog/2014/05/19/context.html
 
 
@@ -73,13 +76,30 @@ class ArticleDeleteView(ContextTitleMixIn, DeleteView):
         # return context
     
     
+# def search_titles(request):
+    # '''search for a title using jQuery/AJAX'''
+    # if request.method == 'POST':
+        # #search_text = request.POST.get('post_text')
+        # search_text = request.POST['search_text']
+    # else:
+        # search_text = ''
+    # articles = Article.objects.filter(title__contains=search_text)
+    # return render(request, 'article/ajax_search.html', {'articles': articles})
+    
+    
 def search_titles(request):
-    if request.method == 'POST':
+    '''search for a title using jQuery/AJAX'''
+    if request.is_ajax() and request.POST:
         #search_text = request.POST.get('post_text')
-        search_text = request.POST['search_text']
-    else:
-        search_text = ''
+        search_text = request.POST.get('search_text', '')
+        
     articles = Article.objects.filter(title__contains=search_text)
-    return render(request, 'article/ajax_search.html', {'articles': articles})
+    
+    if articles:
+        for article in articles:
+            article_title = article.title    # if articles: data = {'title': article_title}
+        data = {'title': article_title}   
+        
+    return HttpResponse(json.dumps(data), content_type='application/json')
     
  

@@ -1,7 +1,41 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="0ed715eb-2685-44b3-8f38-628f61108cdc" name="Default" comment="" />
+    <list default="true" id="0ed715eb-2685-44b3-8f38-628f61108cdc" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/article/ajax.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/django_blog/forms.py" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/js/ajax_copy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/js/main2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/static/js/youtube.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/base_temp.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/templates/index2.html" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_root/js/ajax_copy.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_root/js/main2.js" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/static_root/js/youtube.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/db.sqlite3" afterPath="$PROJECT_DIR$/src/db.sqlite3" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_project.sublime-project" afterPath="$PROJECT_DIR$/dev_project.sublime-project" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/dev_project.sublime-workspace" afterPath="$PROJECT_DIR$/dev_project.sublime-workspace" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/article/urls.py" afterPath="$PROJECT_DIR$/src/article/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/article/views.py" afterPath="$PROJECT_DIR$/src/article/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/django_blog/settings.py" afterPath="$PROJECT_DIR$/src/django_blog/settings.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/django_blog/urls.py" afterPath="$PROJECT_DIR$/src/django_blog/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/django_blog/views.py" afterPath="$PROJECT_DIR$/src/django_blog/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/posts/urls.py" afterPath="$PROJECT_DIR$/src/posts/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/posts/views.py" afterPath="$PROJECT_DIR$/src/posts/views.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/js/ajax.js" afterPath="$PROJECT_DIR$/src/static/js/ajax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/static/js/main.js" afterPath="$PROJECT_DIR$/src/static/js/main.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/talks/urls.py" afterPath="$PROJECT_DIR$/src/talks/urls.py" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/article/ajax_search.html" afterPath="$PROJECT_DIR$/src/templates/article/ajax_search.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/article/article_list.html" afterPath="$PROJECT_DIR$/src/templates/article/article_list.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/base.html" afterPath="$PROJECT_DIR$/src/templates/base.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/posts/index.html" afterPath="$PROJECT_DIR$/src/templates/posts/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/talks/talklist_form.html" afterPath="$PROJECT_DIR$/src/templates/talks/talklist_form.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/templates/test.html" afterPath="$PROJECT_DIR$/src/templates/test.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_root/js/ajax.js" afterPath="$PROJECT_DIR$/static_root/js/ajax.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/static_root/js/main.js" afterPath="$PROJECT_DIR$/static_root/js/main.js" />
+    </list>
     <ignored path="Development.iws" />
     <ignored path=".idea/workspace.xml" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -21,10 +55,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="models.py" pinned="false" current-in-tab="false">
+      <file leaf-file-name="models.py" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/article/models.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.0">
+            <state vertical-scroll-proportion="0.6415094">
               <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
               <folding>
                 <element signature="e#0#39#0" expanded="true" />
@@ -33,19 +67,20 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+      <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/django_blog/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state vertical-scroll-proportion="0.4347241">
-              <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
-              <folding>
-                <element signature="e#0#35#0" expanded="true" />
-              </folding>
+            <state vertical-scroll-proportion="0.0">
+              <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+              <folding />
             </state>
           </provider>
         </entry>
       </file>
     </leaf>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
@@ -56,8 +91,8 @@
     </option>
   </component>
   <component name="ProjectFrameBounds">
-    <option name="x" value="331" />
-    <option name="y" value="74" />
+    <option name="x" value="348" />
+    <option name="y" value="65" />
     <option name="width" value="1400" />
     <option name="height" value="929" />
   </component>
@@ -86,6 +121,7 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
+      <pane id="Scratches" />
       <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
@@ -157,7 +193,6 @@
           </PATH>
         </subPane>
       </pane>
-      <pane id="Scratches" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -177,7 +212,7 @@
     <servers />
   </component>
   <component name="ToolWindowManager">
-    <frame x="331" y="74" width="1400" height="929" extended-state="0" />
+    <frame x="348" y="65" width="1400" height="929" extended-state="0" />
     <editor active="false" />
     <layout>
       <window_info id="Project" active="true" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.2496329" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
@@ -218,7 +253,7 @@
     <entry file="file://$PROJECT_DIR$/src/article/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
             <element signature="e#0#39#0" expanded="true" />
           </folding>
@@ -228,10 +263,26 @@
     <entry file="file://$PROJECT_DIR$/src/django_blog/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/article/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/django_blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -247,10 +298,44 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/django_blog/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4347241">
-          <caret line="19" column="0" selection-start-line="19" selection-start-column="0" selection-end-line="19" selection-end-column="0" />
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/article/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
           <folding>
-            <element signature="e#0#35#0" expanded="true" />
+            <element signature="e#0#39#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/django_blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/django_blog/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="104" column="0" selection-start-line="104" selection-start-column="0" selection-end-line="104" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/article/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.6415094">
+          <caret line="28" column="0" selection-start-line="28" selection-start-column="0" selection-end-line="28" selection-end-column="0" />
+          <folding>
+            <element signature="e#0#39#0" expanded="true" />
           </folding>
         </state>
       </provider>

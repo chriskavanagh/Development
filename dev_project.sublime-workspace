@@ -28,85 +28,96 @@
 	"buffers":
 	[
 		{
-			"file": "src/templates/base.html",
+			"file": "/C/Users/Chris/Desktop/ea/src/templates/register.html",
 			"settings":
 			{
-				"buffer_size": 4090,
+				"buffer_size": 264,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Chris/Desktop/ea/src/templates/loggedin.html",
+			"settings":
+			{
+				"buffer_size": 181,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "/C/Users/Chris/Desktop/ea/src/templates/home.html",
+			"settings":
+			{
+				"buffer_size": 25,
 				"line_ending": "Windows"
 			}
 		},
 		{
-			"file": "src/templates/talks/talklist_list.html",
+			"file": "/C/Users/Chris/Desktop/ea/src/templates/login.html",
 			"settings":
 			{
-				"buffer_size": 880,
-				"line_ending": "Windows"
+				"buffer_size": 752,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/templates/talks/talk_list_user.html",
+			"file": "/C/Users/Chris/Desktop/ea/src/templates/invalid_login.html",
 			"settings":
 			{
-				"buffer_size": 843,
-				"line_ending": "Windows"
+				"buffer_size": 173,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/templates/talks/talklist_detail.html",
+			"file": "/C/Users/Chris/Desktop/ea/src/templates/base.html",
 			"settings":
 			{
-				"buffer_size": 1462,
-				"line_ending": "Windows",
-				"name": "{% extends base.html' %}"
+				"buffer_size": 1760,
+				"line_ending": "Unix"
 			}
 		},
 		{
-			"file": "src/templates/talks/talk_list_detail.html",
+			"file": "/C/Users/Chris/Desktop/closures.py",
 			"settings":
 			{
-				"buffer_size": 1171,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/templates/article/article_form.html",
-			"settings":
-			{
-				"buffer_size": 523,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/templates/talks/talklist_form.html",
-			"settings":
-			{
-				"buffer_size": 404,
-				"line_ending": "Windows"
-			}
-		},
-		{
-			"file": "src/templates/test.html",
-			"settings":
-			{
-				"buffer_size": 1929,
+				"buffer_size": 338,
 				"line_ending": "Windows"
 			}
 		}
 	],
-	"build_system": "",
+	"build_system": "Packages/Python/Python.sublime-build",
 	"build_system_choices":
 	[
+		[
+			[
+				[
+					"Packages/Python/Python.sublime-build",
+					""
+				],
+				[
+					"Packages/Python/Python.sublime-build",
+					"Syntax Check"
+				]
+			],
+			[
+				"Packages/Python/Python.sublime-build",
+				""
+			]
+		]
 	],
 	"build_varint": "",
 	"command_palette":
 	{
-		"height": 387.0,
+		"height": 364.0,
 		"last_filter": "Package Control: ",
 		"selected_items":
 		[
 			[
 				"Package Control: ",
 				"Package Control: Remove Package"
+			],
+			[
+				"Package Control: s",
+				"Package Control: Install Package"
 			],
 			[
 				"Package Control: i",
@@ -152,6 +163,7 @@
 		"height": 126.0,
 		"history":
 		[
+			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by)",
 			"import urllib.request,os,hashlib; h = '2915d1851351e5ee549c20394736b442' + '8bc59f460fa1548d1514676163dafc88'; pf = 'Package Control.sublime-package'; ipp = sublime.installed_packages_path(); urllib.request.install_opener( urllib.request.build_opener( urllib.request.ProxyHandler()) ); by = urllib.request.urlopen( 'http://packagecontrol.io/' + pf.replace(' ', '%20')).read(); dh = hashlib.sha256(by).hexdigest(); print('Error validating download (got %s instead of %s), please try manual install' % (dh, h)) if dh != h else open(os.path.join( ipp, pf), 'wb' ).write(by) "
 		]
 	},
@@ -175,18 +187,74 @@
 	],
 	"file_history":
 	[
+		"/C/Users/Chris/Desktop/Development/src/article/models.py",
+		"/C/Users/Chris/Desktop/CustomUserModel/ea/custom_user/models.py",
+		"/C/Users/Chris/Desktop/Development/src/templates/talks/talklist_form.html",
+		"/C/Users/Chris/Desktop/CustomUserModel/ea/templates/home.html",
+		"/C/Users/Chris/Desktop/ea/src/templates/404.html",
+		"/C/Users/Chris/Desktop/ea/src/templates/500.html",
+		"/C/Users/Chris/Documents/Django/MikeHibbert/templates/404.html",
+		"/C/Users/Chris/Desktop/trydjango19/src/templates/post_list.html",
+		"/C/Users/Chris/Desktop/trydjango19/src/templates/post_detail.html",
+		"/C/Users/Chris/Desktop/trydjango19/src/templates/post_form.html",
+		"/C/Users/Chris/Desktop/trydjango19/src/templates/food_form.html",
+		"/C/Users/Chris/Desktop/trydjango19/src/templates/sign_up.html",
+		"/C/Users/Chris/Desktop/trydjango19/src/templates/base.html",
+		"/C/Users/Chris/Desktop/trydjango19/src/templates/home.html",
+		"/C/Users/Chris/Desktop/ecommerce/src/templates/catalog/catalog.html",
+		"/C/Users/Chris/Desktop/ecommerce/src/templates/catalog/product.html",
+		"/C/Users/Chris/Desktop/ecommerce/src/templates/index.html",
+		"/C/Users/Chris/Desktop/ecommerce/src/templates/base.html",
+		"/C/Users/Chris/Desktop/ecommerce/src/templates/cart/cart.html",
+		"/C/Users/Chris/Desktop/CustomUserModel/ea/templates/404.html",
+		"/C/Users/Chris/Desktop/ecommerce/src/templates/catalog.html",
+		"/C/Users/Chris/Desktop/ecommerce/src/templates/product.html",
+		"/C/Users/Chris/Desktop/ecommerce/src/static/css/css.css",
+		"/C/Users/Chris/Desktop/trydjango19/src/templates/manual_form.html",
+		"/C/Users/Chris/Desktop/django-ecommerce/Beginning_Django_Ecommerce_source/Chapter_01-15/ecomstore/catalog/models.py",
+		"/C/Users/Chris/Desktop/trydjango19/src/templates/base_fbcomments.html",
+		"/C/Users/Chris/Desktop/trydjango19/src/templates/social_media/facebook.html",
+		"/C/Users/Chris/Desktop/trydjango19/src/templates/disqus_comments.html",
+		"/C/Users/Chris/Desktop/trydjango19/src/templates/sublimepython.py",
+		"/C/Users/Chris/Desktop/trydjango19/src/templates/post_detail_fbcomments.html",
+		"/C/Users/Chris/Desktop/trydjango19_base.html",
+		"/C/Users/Chris/Desktop/trydjango19/src/templates/index.html",
+		"/C/Users/Chris/Desktop/trydjango19/src/templates/form.html",
+		"/C/Users/Chris/Desktop/Development/src/templates/base.html",
+		"/C/Users/Chris/Desktop/django19/src/templates/home.html",
+		"/C/Users/Chris/Desktop/Development/src/django_blog/urls.py",
 		"/C/Users/Chris/Desktop/Development/src/templates/home.html",
+		"/C/Users/Chris/Desktop/Development/src/django_blog/views.py",
+		"/C/Users/Chris/Desktop/django19/src/templates/index.html",
+		"/C/Users/Chris/Desktop/django19/src/templates/post_detail.html",
+		"/C/Users/Chris/Desktop/Development/src/talks/views.py",
+		"/C/Users/Chris/Desktop/trydjango19/src/trydjango19/urls.py",
+		"/C/Users/Chris/Desktop/trydjango19/src/templates/post_create.html",
+		"/C/Users/Chris/Desktop/Development/src/talks/urls.py",
+		"/C/Users/Chris/Documents/Django/Mike Hibbert Django/hibbert-django/userprofile/views.py",
+		"/C/Users/Chris/Desktop/Development/src/article/urls.py",
+		"/C/Users/Chris/Desktop/Development/src/talks/models.py",
+		"/C/Users/Chris/Desktop/Development/src/talks/forms.py",
+		"/C/Users/Chris/Desktop/Development/src/templates/posts/index.html",
+		"/C/Users/Chris/Desktop/Development/src/templates/talks/talk_list_detail.html",
+		"/C/Users/Chris/Desktop/Development/src/templates/article/article_list.html",
+		"/C/Users/Chris/Desktop/Development/src/templates/article/ajax_search.html",
+		"/C/Users/Chris/Desktop/Development/src/templates/test.html",
+		"/C/Users/Chris/Desktop/Development/src/templates/talks/talklist_detail.html",
+		"/C/Users/Chris/Documents/Django/Mike Hibbert Django/hibbert-django/article/templates/ajax_search.html",
+		"/C/Users/Chris/Desktop/Development/src/templates/article/article_form.html",
+		"/C/Users/Chris/Desktop/ajax_test.js",
+		"/C/Users/Chris/Desktop/test.js",
+		"/C/Users/Chris/Desktop/Development/src/templates/posts/post_list.html",
+		"/C/Users/Chris/Desktop/Development/src/templates/talks/talk_list_user.html",
+		"/C/Users/Chris/Desktop/Development/src/templates/talks/talklist_list.html",
 		"/C/Users/Chris/Desktop/Development/functionbasedview.py",
 		"/C/Users/Chris/Desktop/Development/src/templates/talks/form.html",
 		"/C/Users/Chris/Desktop/Development/src/templates/accounts/login.html",
 		"/C/Users/Chris/Desktop/Development/src/templates/accounts/signup.html",
 		"/C/Users/Chris/Desktop/Development/src/templates/article/article_detail.html",
 		"/C/Users/Chris/Desktop/Development/src/templates/article/article_confirm_delete.html",
-		"/C/Users/Chris/Desktop/Development/src/templates/article/article_list.html",
-		"/C/Users/Chris/Desktop/Development/src/templates/article/article_form.html",
 		"/C/Users/Chris/Desktop/Development/src/article/views.py",
-		"/C/Users/Chris/Desktop/Development/src/article/urls.py",
-		"/C/Users/Chris/Desktop/Development/src/templates/base.html",
 		"/C/Users/Chris/Desktop/Project/trydjango18/templates/home.html",
 		"/C/Users/Chris/Desktop/Project/trydjango18/templates/base.html",
 		"/C/Users/Chris/Desktop/Project/trydjango18/trydjango18/urls.py",
@@ -246,32 +314,7 @@
 		"/C/Users/Chris/Desktop/buckbootstrap.html",
 		"/C/Users/Chris/Desktop/Django/MikeHibbert/article/templates/article.html",
 		"/C/Users/Chris/Desktop/Django/MikeHibbert/article/templates/add_comment.html",
-		"/C/Users/Chris/Desktop/crash-course/src/comments/models.py",
-		"/C/Users/Chris/Desktop/crash-course/models.py",
-		"/C/Users/Chris/Desktop/Django/MikeHibbert/article/forms.py",
-		"/C/Users/Chris/Desktop/Django/MikeHibbert/article/admin.py",
-		"/C/Users/Chris/Desktop/crash-course/src/templates/talklist_confirm_delete.html",
-		"/C/Users/Chris/Desktop/crash-course/src/templates/talklist_archive.html",
-		"/C/Users/Chris/Desktop/crash-course/src/templates/accounts/login.html",
-		"/C/Users/Chris/Desktop/crash-course/src/templates/accounts/signup.html",
-		"/C/Users/Chris/Desktop/crash-course/src/talks/admin.py",
-		"/C/Users/Chris/Desktop/crash-course/src/templates/accounts/login",
-		"/C/Users/Chris/Desktop/django-projects/src/templates/registration/registration_form.html",
-		"/C/Users/Chris/Desktop/django-projects/src/templates/registration/registration_complete.html",
-		"/C/Users/Chris/Desktop/django-projects/src/templates/registration/registration_closed.html",
-		"/C/Users/Chris/Desktop/django-projects/src/templates/registration/password_reset_form.html",
-		"/C/Users/Chris/Desktop/django-projects/src/templates/registration/password_reset_email.html",
-		"/C/Users/Chris/Desktop/django-projects/src/templates/registration/password_reset_done.html",
-		"/C/Users/Chris/Desktop/django-projects/src/templates/registration/password_reset_confirm.html",
-		"/C/Users/Chris/Desktop/django-projects/src/templates/registration/password_reset_complete.html",
-		"/C/Users/Chris/Desktop/django-projects/src/templates/registration/password_change_form.html",
-		"/C/Users/Chris/Desktop/django-projects/src/templates/registration/activation_complete.html",
-		"/C/Users/Chris/Desktop/django-projects/src/templates/registration/activation_email.txt",
-		"/C/Users/Chris/Desktop/django-projects/src/templates/registration/activation_email_subject.txt",
-		"/C/Users/Chris/Desktop/django-projects/src/templates/registration/login.html",
-		"/C/Users/Chris/Desktop/django-projects/src/templates/registration/logout.html",
-		"/C/Users/Chris/Desktop/django-projects/src/templates/registration/password_change_done.html",
-		"/C/Users/Chris/Desktop/django-projects/src/templates/registration/activate.html"
+		"/C/Users/Chris/Desktop/crash-course/src/comments/models.py"
 	],
 	"find":
 	{
@@ -315,58 +358,53 @@
 			[
 				{
 					"buffer": 0,
-					"file": "src/templates/base.html",
+					"file": "/C/Users/Chris/Desktop/ea/src/templates/register.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 4090,
+						"buffer_size": 264,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								3684,
-								3684
+								183,
+								183
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
-							"tab_size": 2,
-							"translate_tabs_to_spaces": true,
-							"word_wrap": false
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 6,
+					"stack_index": 4,
 					"type": "text"
 				},
 				{
 					"buffer": 1,
-					"file": "src/templates/talks/talklist_list.html",
+					"file": "/C/Users/Chris/Desktop/ea/src/templates/loggedin.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 880,
+						"buffer_size": 181,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								392,
-								392
+								181,
+								181
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
-							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
-							"word_wrap": false
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -377,61 +415,58 @@
 				},
 				{
 					"buffer": 2,
-					"file": "src/templates/talks/talk_list_user.html",
+					"file": "/C/Users/Chris/Desktop/ea/src/templates/home.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 843,
+						"buffer_size": 25,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								645,
-								645
+								25,
+								25
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
-							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
+							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
 						},
 						"translation.x": 0.0,
-						"translation.y": 53.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
-					"stack_index": 4,
+					"stack_index": 6,
 					"type": "text"
 				},
 				{
 					"buffer": 3,
-					"file": "src/templates/talks/talklist_detail.html",
+					"file": "/C/Users/Chris/Desktop/ea/src/templates/login.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1462,
+						"buffer_size": 752,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								1462,
-								1462
+								261,
+								261
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
-							"auto_name": "{% extends base.html' %}",
 							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
-							"word_wrap": false
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
-						"translation.y": 321.0,
+						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 5,
@@ -439,55 +474,24 @@
 				},
 				{
 					"buffer": 4,
-					"file": "src/templates/talks/talk_list_detail.html",
+					"file": "/C/Users/Chris/Desktop/ea/src/templates/invalid_login.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 1171,
+						"buffer_size": 173,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								578,
-								578
+								90,
+								90
 							]
 						],
 						"settings":
 						{
-							"auto_complete": false,
 							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage"
-						},
-						"translation.x": 0.0,
-						"translation.y": 50.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 7,
-					"type": "text"
-				},
-				{
-					"buffer": 5,
-					"file": "src/templates/article/article_form.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 523,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								482,
-								489
-							]
-						],
-						"settings":
-						{
-							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
-							"tab_size": 4,
-							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
@@ -497,64 +501,63 @@
 					"type": "text"
 				},
 				{
-					"buffer": 6,
-					"file": "src/templates/talks/talklist_form.html",
+					"buffer": 5,
+					"file": "/C/Users/Chris/Desktop/ea/src/templates/base.html",
 					"semi_transient": false,
 					"settings":
 					{
-						"buffer_size": 404,
+						"buffer_size": 1760,
 						"regions":
 						{
 						},
 						"selection":
 						[
 							[
-								404,
-								404
+								868,
+								868
 							]
 						],
 						"settings":
 						{
 							"auto_complete": false,
 							"syntax": "Packages/Djaneiro/Syntaxes/HTML (Django).tmLanguage",
-							"word_wrap": false
-						},
-						"translation.x": 0.0,
-						"translation.y": 0.0,
-						"zoom_level": 1.0
-					},
-					"stack_index": 2,
-					"type": "text"
-				},
-				{
-					"buffer": 7,
-					"file": "src/templates/test.html",
-					"semi_transient": false,
-					"settings":
-					{
-						"buffer_size": 1929,
-						"regions":
-						{
-						},
-						"selection":
-						[
-							[
-								1929,
-								1929
-							]
-						],
-						"settings":
-						{
-							"auto_complete": false,
-							"open_with_edit": true,
-							"syntax": "Packages/HTML/HTML.tmLanguage",
-							"word_wrap": false
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
 						},
 						"translation.x": 0.0,
 						"translation.y": 0.0,
 						"zoom_level": 1.0
 					},
 					"stack_index": 1,
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "/C/Users/Chris/Desktop/closures.py",
+					"semi_transient": false,
+					"settings":
+					{
+						"buffer_size": 338,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								338,
+								338
+							]
+						],
+						"settings":
+						{
+							"auto_complete": false,
+							"syntax": "Packages/Djaneiro/Syntaxes/Python Django.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"stack_index": 2,
 					"type": "text"
 				}
 			]
@@ -591,11 +594,15 @@
 		]
 	},
 	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 100.0
+	},
 	"output.find_results":
 	{
 		"height": 0.0
 	},
-	"pinned_build_system": "",
+	"pinned_build_system": "Packages/Python/Python.sublime-build",
 	"project": "dev_project.sublime-project",
 	"replace":
 	{
@@ -608,6 +615,10 @@
 		"last_filter": "",
 		"selected_items":
 		[
+			[
+				"",
+				"C:\\Users\\Chris\\Desktop\\trydjango19\\src\\templates\\post_form.html"
+			],
 			[
 				"talklis",
 				"src\\templates\\talks\\talklist_detail.html"

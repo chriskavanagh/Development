@@ -14,6 +14,9 @@ from django.contrib.auth.decorators import login_required
 from django.contrib.auth import authenticate, login, logout
 from django.core.urlresolvers import reverse_lazy, reverse
 from braces import views
+from .forms import AjaxForm    #for testpage view
+from django.http import Http404, HttpResponse
+import json
 # import from django.views import generic then use generic.ListView etc in Class
 
 
@@ -76,3 +79,26 @@ class LogOutView(ContextTitleMixIn, RedirectView):
         
 class TestPageView(TemplateView):
     template_name = 'test.html'
+    
+    
+def get_order(request):
+    if request.is_ajax() and request.POST:
+        order_name = request.POST.get('name')
+        order_drink = request.POST.get('drink')
+        data = {'name': order_name, 'drink': order_drink}
+        return HttpResponse(json.dumps(data), content_type='application/json')
+    else:
+        return Http404
+        
+        
+        
+# def get_order(request):
+    # if request.is_ajax() and request.POST:
+        # order_name = request.POST.get('name')
+        # order_drink = request.POST.get('drink')
+        # data = {}
+        # data['name'] = order_name
+        # data['drink'] = order_drink
+        # return HttpResponse(json.dumps(data), content_type='application/json')
+    # else:
+        # return Http404

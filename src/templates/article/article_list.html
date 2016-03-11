@@ -21,9 +21,8 @@
     </div>
 
     <h3>Search</h3>
-
-        {% csrf_token %}
-        <input type="text" id="search" name="search"/>
+        
+        <input type="text" id="search" name="search"/>{% csrf_token %}
         
         <ul id="search-results">
 

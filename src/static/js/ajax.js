@@ -4,13 +4,13 @@ $(function(){
     
         $.ajax({
             type: "POST",
-            url: "/articles/search/",
+            url: "search/",
             data: { 
                 'search_text' : $('#search').val(),
                 'csrfmiddlewaretoken' : $("input[name=csrfmiddlewaretoken]").val()
             },
             success: searchSuccess,
-            dataType: 'html'
+            dataType: 'json'
         });
         
     });
@@ -19,5 +19,5 @@ $(function(){
 
 function searchSuccess(data, textStatus, jqXHR)
 {
-    $('#search-results').html(data);
+    $('#search-results').append('<li>title: '+data.title+'</li>');
 }

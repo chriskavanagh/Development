@@ -2,6 +2,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Post
 from .forms import PostForm
+from django.http import JsonResponse
 import json
     
     
@@ -13,9 +14,21 @@ def home(request):
     
 def create_post(request):
     if request.method == 'POST':
-        search_text = request.POST.get('post_text')
-    articles = Article.objects.filter(title__contains=search_text)
-    return render(request, 'article/ajax_search.html', {'articles': articles})
+        post_text = request.POST.get('the_post')
+        response_data = {}
+        
+        post = Post(text=post_text, author=request.user)
+        post.save()
+        
+        response_data['text'] = post.text
+        #response_data['author'] = str(post.author.username)
+        response_data['author'] = post.author.username
+        
+        return HttpResponse(json.dumps(response_data), content_type='application/json')
+    else:
+        return HttpResponse(json.dumps({'nothing here': 'Error'}), content_type='application/json')   
+    
+    
     
     
     
